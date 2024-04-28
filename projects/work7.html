@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .navbar .pic img{
+        height: 11vh;
+    }
+    .navbar ul{
+        display: flex;
+    }
+    .navbar{
+        justify-content:space-between;
+        display: flex;
+        align-items: center;
+    }
+    .navbar ul li a{
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 20px;
+       
+    }
+    .navbar ul li{
+        list-style: none;
+    }
+    .navbar ul li a:hover{
+        text-decoration: underline;
+    }
+    .bttn1{
+        cursor: pointer;
+        border-radius: 5px;
+        padding: 8px;
+        margin: 0px 40px;
+        background-color: slategray;
+        height: 5vh;
+      display: flex;
+      align-items: center;
+    }
+    .bttn1 img{
+        height: 3.5vh;
+    }
+    #top{
+        flex-direction: column;
+        display: flex;
+        padding:8px ;
+        width: 50vw;
+        height:50vh ;
+        /* border: 2px solid black; */
+        border-radius: 5px;
+    }
+    #top h1{
+        font-size: 2rem;
+    }
+    #top p{
+        line-height: 1.3rem;
+        margin-top: 22px;
+    }
+    #top button{
+        margin-top: 20px;
+    }
+    .bttn2{
+        width: 10vw;
+        cursor: pointer;
+        background-color: blue;
+        color: white;
+        padding: 8px;
+        font-size: 15px;
+        border: 2px solid blue;
+       border-radius: 2px;
+    }
+    .bttn3{
+        font-weight: bold;
+        padding: 8px;
+        color: black;
+        width: 10vw;
+    }
+    .car img{
+        height: 53vh;
+        width: 50vw;
+        position: relative;
+        display: flex;
+    }
+    .container1{
+        display: flex;
+    }
+    .pic img{
+        height: 12vh;
+        margin: 0px 60px;
+      margin-top: 20px;
+    }
+   
+    #busy img{
+        margin-top: 20px;
+        padding: 0px 30px;
+        width: 35vw;
+        height: 60vh;
+        /* border: 2px solid black; */
+    }
+    #busy div{
+        margin: 25px;
+    }
+    .f1 h1{
+       
+        font-size:35px;
+        margin-top: 20px;
+    }
+    .f1 p{
+       padding: 8px;
+        font-size: 1rem;
+        margin-top: 25px;
+    }
+    .f1{
+        height: 60vh;
+        width: 35vw;
+        /* border: 2px solid black; */
+    }
+    .container2{
+        display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+   .link{
+    margin-top: 20px;
+   }
+    
+   .bttn4{
+  cursor: pointer;
+  color: white;
+  background-color: blue;
+  border-radius: 5px;
+  padding: 8px;
+  border: 2px solid blue;
+  margin-top: 20px;
+    }
+    #business {
+        background-image: linear-gradient(165deg,white,black,gray);
+        height: 50vh;
+        width: 100%;
+    }
+    .rise h1{
+        color:white;
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+    .rise h2{
+        color: blue;
+        font-size: 2.4rem;
+    }
+    .rise p{
+        font-size: 17px;
+        padding: 0px 8rem;
+        margin-top: 20px;
+        color: white;
+    }
+    .rise{
+        text-align: center;
+        margin: 20px;
+        padding: 22px;
+    }
+    .flash .flash1{
+        height: 45vh;
+    width: 20vw;
+    border-top: 5px solid blue;
+    background-color:whitesmoke;
+    margin: 20px;
+    padding: 15px;
+    }
+    .flash{
+    display: flex;
+    justify-content: center;
+}
+.flash1 h2{
+    margin-top: 20px;
+}
+.flash1 p{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.b1  .bttn6{
+    cursor: pointer;
+    font-size: 18px;
+    width: 15vw;
+    margin:10px 75px;
+    padding: 7px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.bttn5{
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    border: 5px solid blue;
+    border-radius: 5px;
+    padding: 7px;
+     margin-top: 10px;
+    width: 15vw;
+    margin-left: 75px;
+}
+#intelligent .b1{
+    /* border: 2px solid black; */
+    background-color:royalblue;
+    
+}
+#intelligent .b1 p{
+    font-size: 19px;
+    margin: 0px 75px;
+    
+}
+#intelligent ul li {
+    margin: 0px 11rem;
+    font-size: 18px;
+}
+#intelligent .like{
+    flex-wrap: wrap;
+    text-align: start;
+    display: flex;
+   margin: 20px 35px;
+   
+   
+}
+#intelligent .b1 img{
+    height: 35vh;
+    width: 20vw;
+    margin:10px 75px;
+   
+}
+#intelligent {
+    text-align: center;
+    margin-top: 2.8rem;
+}
+#intelligent h1{
+    margin-top: 20px;
+}
+
+#intelligent ul{
+    text-decoration: underline;
+    margin-top: 10px;
+    display: flex;
+}
+#nobody{
+    text-align: center;
+    margin-top: 20px;
+}
+.bttn7{
+    margin-top: 20px;
+    margin-left: 35rem;
+    padding: 7px;
+    width: 12vw;
+    font-size: 18px;
+    border: 2px solid blue;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+}
+.last{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin-top: 40px;
+    height: 40vh;
+    background-image: linear-gradient(163deg,darkblue,skyblue,blue);
+    margin-left: 71px;
+   
+}
+.last p{
+    margin-top: 40px;
+    padding: 0px 80px;
+    line-height: 1.8rem;
+}
+
+.last h1{
+    margin-top: 40px;
+   position: relative;
+   top: 1rem;
+}
+.last button{
+    margin-top: 20px;
+}
+button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.bttn8 .bttn9{
+    border: 2px solid black;
+    cursor: pointer;
+    padding: 9px;
+    background-color:blue;
+    color: black;
+}
+ .last img{
+    height: 7vh;
+    width:7vw;
+}
+</style>
+<body>
+    <nav class="navbar">
+        <div class="pic">
+            <img src="c.jpg" alt="">
+        </div>
+        <ul>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#busy">Using</a></li>
+            <li><a href="#business">Services</a></li>
+            <li><a href="#intelligent">Contact</a></li>
+            <li><a href="#nobody">Facilities</a></li>
+        </ul>
+        <button class="bttn1"><img src="apple.png" alt="">Exponential App</button>
+    </nav>
+    <div class="container1">
+    <div id="top">
+        <h1>Search and find <br> Your best car Rental <br> With easy Way</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates repellat ullam, nulla, nisi dolores a itaque eveniet corporis, dignissimos beatae amet odio fugit veniam quo. Necessitatibus laudantium at sapiente dolore.</p>
+        <div>
+        <button class="bttn2">Booking Now <img src="" alt=""></button>
+        <button class="bttn3">See all cars</button>
+    </div>
+</div>
+    <div class="car">
+        <img src="car.jpg" alt="">
+    </div>
+</div>
+<div class="pic">
+    <img src="https://pngimg.com/uploads/car_logo/small/car_logo_PNG1658.png" alt="">
+    <img src="https://pngimg.com/uploads/car_logo/small/car_logo_PNG1647.png" alt="">
+    <img src="https://pngimg.com/uploads/car_logo/small/car_logo_PNG1665.png" alt="">
+    <img src="https://pngimg.com/uploads/car_logo/small/car_logo_PNG1650.png" alt="">
+    <img src="https://pngimg.com/uploads/car_logo/small/car_logo_PNG1659.png" alt="">
+    <img src="https://pngimg.com/uploads/car_logo/small/car_logo_PNG1658.png" alt="">
+</div>
+<div class="container2">
+<div id="busy">
+    <img src="sky.jpg" alt="">
+</div>
+<div class="f1">
+    <div class="link">
+    <a href="About us">About us</a>
+</div>
+                <h1>More Than 150+ special collection cars</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis nobis dolore aliquid vitae. Ducimus
+                    expedita corrupti perferendis obcaecati id voluptates quam voluptas! Blanditiis architecto officiis
+                    doloribus laborum aliquid rerum distinctio.</p>
+                <button class="bttn4">see all cars &#8594</button>
+            </div>  
+        </div>  
+            <div id="business">
+                <div class="rise">
+                    <h2>Our Services</h2>
+                    <h1>We have the best Service <br> for the rent cars</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quasi. Deserunt accusamus ea, tempora, officiis cum, aliquid perspiciatis itaque sapiente eum odio minus dicta dolorum.</p>
+                </div>
+                <div class="flash">
+                    <div class="flash1">
+                        <img src="https://pngimg.com/uploads/car_logo/small/car_logo_PNG1651.png" alt="">
+                        <h2>Quality choice</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consequuntur nostrum nesciunt maiores quisquam ea.</p>
+                    </div>
+                    <div class="flash1">
+                        <img src="https://pngimg.com/uploads/car_logo/small/car_logo_PNG1652.png" alt="">
+                        <h2>Exclusive service</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consequuntur nostrum nesciunt maiores quisquam ea.</p>
+                    </div>
+                    <div class="flash1">
+                        <img src="https://pngimg.com/uploads/car_logo/small/car_logo_PNG1653.png" alt="">
+                        <h2>Fast and Save</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consequuntur nostrum nesciunt maiores quisquam ea.</p>
+                    </div>
+                </div>
+                <div id="intelligent">
+                    <div>
+                        <a href="Collections">Collections</a>
+                        <h1>Our Collection Cars</h1>
+                        <ul>
+                            <li>Popular</li>
+                            <li>Sound cars</li>
+                            <li>Expensive cars</li>
+                        </ul>
+                    </div>
+                    <div class="like">
+                        <div class="b1">
+                            <img src="https://source.unsplash.com/random/567x567" alt="">
+                            <p><b>$80,997</b></p>
+                            <p>Toyota 2021</p>
+                            <button class="bttn5">Booking Now</button>
+                        </div>
+                        <div class="b1">
+                            <img src="https://source.unsplash.com/random/560x580" alt="">
+                            <p><b>$80,4494</b></p>
+                            <p>Lamborghini 2020</p>
+                            <button class="bttn6">Booking Now</button>
+                        </div>
+                        <div class="b1">
+                            <img src="https://source.unsplash.com/random/567x593" alt="">
+                            <p><b>$90,594</b></p>
+                            <p>Mazda sports silver 2020</p>
+                            <button class="bttn6">Booking Now</button>
+                        </div>
+                        <div class="b1">
+                            <img src="https://source.unsplash.com/random/567x565" alt="">
+                            <p><b>$82,511</b></p>
+                            <p>Mazda sports yellow 2020</p>
+                            <button class="bttn6">Booking Now</button>
+                        </div>
+                        <div class="b1">
+                            <img src="https://source.unsplash.com/random/587x563" alt="">
+                            <p><b>$84,390</b></p>
+                            <p>Mazda sports red 2020</p>
+                            <button class="bttn6">Booking Now</button>
+                        </div>
+                        <div class="b1">
+                            <img src="https://source.unsplash.com/random/567x577" alt="">
+                            <p><b>$78,596</b></p>
+                            <p>Mazda Blue mini 2020</p>
+                            <button class="bttn6">Booking Now</button>
+                        </div>
+                        <div id="nobody">
+                            <button class="bttn7"> See All Cars &#8594</button>
+                        </div>
+                        <div class="last">
+                            <h1>Lets drive renty today!</h1>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptas quas incidunt voluptate aperiam recusandae praesentium voluptatum repellat nesciunt, quia libero aspernatur eos expedita quisquam, impedit beatae in qui repudiandae est sunt, sapiente iusto id sint? Odio ex soluta mollitia nihil labore quibusdam voluptate alias perspiciatis optio cumque? Harum, rerum expedita aperiam atque neque quia!</p>
+                            <div>
+                                <button class="bttn8"><img src="p.jpg""></button>
+                                <button class="bttn9"><img src="d.jpg" alt=""></button>
+                            </div>
+                        </div>
+                    <footer>
+                        <p></p>
+                    </footer>
+                </body>
+                
+                </html>
+</div>
+</body>
+</html>

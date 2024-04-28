@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+        .red{color: red;}
+    </style>
+    <script type="text/Javascript" src="jQuery.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+           // $('h1').addClass('red');
+           // $('h1.myClass').html('This is heading from jQuery')
+           $('button').click(function()
+           {
+           // $('h1').html('Here is some new text');
+            $('h1').slideUp(200);
+            $('h1').html('Changed Text').slideToggle(200);
+
+           });
+        });
+        
+    </script>
+    </head>
+<body>
+
+<!-- <h1 class="myClass">This is heading</h1>
+<h1>Here is another heading</h1> -->
+<!-- <script>
+    $('h1').addClass('red');
+</script> -->
+
+<button>Change Text</button>
+<h1>This is the text to change.</h1>
+</body>
+</html>

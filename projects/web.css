@@ -1,0 +1,30 @@
+h1
+{
+    color: blueviolet;
+}
+
+#uni
+{
+    color:darkmagenta;
+}
+
+.group
+{
+    color:darkgoldenrod;
+}
+.g
+{
+    color: darkred;
+}
+
+*
+{
+   
+    color: blue;
+}
+
+h1,p
+{
+    color: darkorange;
+} 
+

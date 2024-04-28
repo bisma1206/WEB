@@ -1,0 +1,83 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabbeb Form</title>
+    <link rel="stylesheet" type="text/css" href="web1.css"> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () 
+        {
+            $('li.fields:nth-child(n+4)').addClass('hide');
+            $('ul').on('click', 'li.title', function () 
+            {
+                $(this).next().slideDown(200).siblings('li.fields').slideUp(200);
+            });
+        });
+    </script>
+    <script>
+        function validateForm() 
+        {
+            for (var i = 0; i < myForm.elements.length; i++) 
+            {
+                if (myForm.elements[i].className == "req" && myForm.elements[i].value.length == 0) 
+                {
+                    alert('Please fill all required fields.');
+                    return false;
+                }
+            }
+
+            var Email = document.getElementById('E-mail').value;
+            var atpos = Email.indexOf('@');
+            var dotpos = Email.lastIndexOf(' ');
+
+            if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= Email.length)
+            {
+                alert('Please enter a valid email address.');
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form name="myForm" onsubmit="return validateForm()">
+        <ul>
+            <li class="title">Who Are You?</li>
+            <li class="fields">
+                <label>*First Name:</label><br />
+                <input id="First_Name" class="req" type="text" /><br />
+                <label>Middle Name:</label><br />
+                <input id="Middle_Name" type="text" /><br />
+                <label>Last Name:</label><br />
+                <input id="Last_Name" type="text" /><br />
+                <label>*E-mail:</label><br />
+                <input id="E-mail" class="req" type="text" /><br />
+            </li>
+            <li class="title">Where are you?</li>
+            <li class="fields">
+                <label>City:</label><br />
+                <input id="City" type="text" /><br />
+                <label>*State:</label><br />
+                <input id="State" class="req" type="text" /><br />
+                <label>Country:</label><br />
+                <input id="Country" type="text" /><br />
+            </li>
+            <li class="title">What do you do?</li>
+            <li class="fields">
+                <label>*Occupation:</label><br />
+                <input id="Occupation" class="req" type="text" /><br />
+                <label>Company:</label><br />
+                <input id="Company" type="text" /><br />
+                <label>Company Location:</label><br />
+                <input id="Company Location" type="text" /><br />
+            </li>
+        </ul>
+        <input type="submit" value="Submit Form" />
+    </form>
+</body>
+
+</html> -->

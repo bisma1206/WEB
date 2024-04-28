@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Tabbeb Form</title>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="js/animation.js" type="text/Javascript"></script>
+     <script src="js/validation.js" type="text/Javascript"></script>  
+     <link rel="stylesheet" type="text/css" href="web1.css"> 
+ </head>
+   
+
+ <body>
+     <form name="myForm" onsubmit="return validateForm()">
+         <ul>
+             <li class="title">Who Are You?</li>
+             <li class="fields">
+                 <label>*First Name:</label><br />
+                 <input id="First_Name" class="req" type="text" /><br />
+                 <label>Middle Name:</label><br />
+                 <input id="Middle_Name" type="text" /><br />
+                 <label>Last Name:</label><br />
+                 <input id="Last_Name" type="text" /><br />
+                 <label>*E-mail:</label><br />
+                 <input id="E-mail" class="req" type="text" /><br />
+             </li>
+                 <li class="title">Where are you?</li>
+                 <li class="fields">
+                     <label>City:</label><br />
+                     <input id="City" type="text" /><br />
+                     <label>*State:</label><br />
+                     <input id="State" class="req" type="text" /><br />
+                     <label>Country:</label><br />
+                    <input id="Country" type="text" /><br />
+                 </li>
+
+               <li class="title">What do you do?</li>
+               <li class="fields">
+                        <label>*Occupation:</label><br />
+                    <input id="Occupation"class="req" type="text" /><br />
+                    <label>Company:</label><br />
+                    <input id="Company" type="text" /><br />
+                   <label>Company Location:</label><br />
+                    <input id="Company Location" type="text" /><br />
+               </li>
+        </ul>
+         <input type="Submit" value="Submit Form" />
+    </form>
+</body>
+
+</html> 
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript loops and functions and conditions </title>
+    <script>
+
+       // loops
+
+    //    for (var i=0; i<10; i++)
+    //            {
+    //             doucument.write('number  '+i+' <br  />');
+    //            }
+
+    //     var i=0;
+    //     while(i<10)
+    //     {
+    //         doucument.write('number  '+i+' <br  />');
+    //         i++;
+    //     }
+    //     var people = ['bisma', 'laiba', 'ayesha', 'nimra', 'fatima', 'minahil'];
+    //     document.write = people[4];
+    //     for (i = 0; i < people.length; i++) 
+    //     {
+    //         document.write(people[i] + '<br />');
+    //      }
+
+        //functions
+        function sayIt(word1,word2)
+        {
+            word2=word2 || '  world  ';
+            document.write(word1+' '+word2);
+        }
+
+
+        function add(num1,num2)
+        {
+            sum=num1+num2;
+            return sum;
+        }
+
+    </script>
+</head>
+
+<body>
+    <script>
+         
+        sayIt ('Hello');
+
+       document.write(add (15 , 15));
+
+       document.write(add (' 15 ', ' 15 ')); //use as a string
+
+
+     //conditions
+
+       var x=4;
+       if(x>5 && x<10 || x<0)
+       {
+        alert('yes this is');
+       }
+       else
+       {
+        alert('not present');
+       }
+    </script>
+    
+
+
+</body>
+
+</html>
